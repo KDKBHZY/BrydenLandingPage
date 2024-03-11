@@ -3,6 +3,7 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.min.css";
 import "../index.css";
+import { themeJson } from "../theme.js";
 import { json } from "../data/json.js";
 import { ReactElementFactory } from "survey-react-ui";
 
@@ -33,6 +34,8 @@ ReactElementFactory.Instance.registerElement(
 
 export const Header = (props) => {
   const survey = new Model(json);
+  survey.applyTheme(themeJson);
+
   survey.onComplete.add((sender, options) => {
       console.log(JSON.stringify(sender.data, null, 3));
   });

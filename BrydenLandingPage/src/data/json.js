@@ -8,31 +8,31 @@ export const json = {
                 {
                     "type": "imagepicker",
                     "name": "animals",
-                    "title": "Which animals would you like to see in real life?",
+                    "title": "Select the vehicle type you want to know",
                     "description": "Please select all that apply.",
                     "imageHeight": 250,
-                    "imageWidth": 350,
+                    "imageWidth": 400,
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "lion",
-                            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg",
-                            "text": "Lion"
+                            "value": "CAR",
+                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130207/Car%402x.png",
+                            "text": "CAR"
                         },
                         {
-                            "value": "giraffe",
-                            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg",
-                            "text": "Giraffe"
+                            "value": "truck",
+                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130210/Truck%402x.png",
+                            "text": "truck"
                         },
                         {
-                            "value": "red-panda",
-                            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg",
-                            "text": "Red panda"
+                            "value": "SUV",
+                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130209/Suv%402x.png",
+                            "text": "SUV"
                         },
                         {
-                            "value": "camel",
-                            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg",
-                            "text": "Camel"
+                            "value": "VAN",
+                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130212/Van%402x.png",
+                            "text": "VAN"
                         }
                     ],
                     "showLabel": true,
@@ -50,7 +50,7 @@ export const json = {
                     "elements": [{
                         "type": "dropdown",
                         "name": "carmake",
-                        "title": "Which is the brand of your car?",
+                        "title": "Select a Make",
                         "itemComponent": "new-item",
                         "isRequired": true,
                         "choices": [
@@ -131,7 +131,42 @@ export const json = {
                             "path": "Results"
                         }
                     }]
-                }
+                },
+                {
+                    "type": "radiogroup",
+                    "name": "detail",
+                    "title": "Need us to help you find a specific car.",
+                    "isRequired": true,
+                    "choices": [ "Yes", "No" ],
+                    "colCount": 0
+                  },
+                  {
+                    "type": "tagbox",
+                    "name": "Exterior color",
+                    "title": "Choose the exterior color you want",
+                    "visibleIf": "{detail} = 'Yes'",
+                    "isRequired": false,
+                    "description": "Please select all that apply.",
+                    "choices": [ "WHITE", "BLACK", "RED", "BLUE", "Gray" ]
+                  },
+                  {
+                    "type": "tagbox",
+                    "name": "Interior color",
+                    "title": "Choose the interior color you want",
+                    "visibleIf": "{detail} = 'Yes'",
+                    "isRequired": false,
+                    "description": "Please select all that apply.",
+                    "choices": [ "WHITE", "BLACK", "RED", "BLUE", "Gray" ]
+                  },
+                  {
+                    "type": "tagbox",
+                    "name": "options",
+                    "title": "Choose the specific options you want",
+                    "visibleIf": "{detail} = 'Yes'",
+                    "isRequired": false,
+                    "description": "Please select all that apply.",
+                    "choices": [ "Carpay", "Air Suspension", "Branded Audio", "Panaromic Sunroof"]
+                  },
             ]
         },
         {

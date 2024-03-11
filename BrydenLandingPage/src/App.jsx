@@ -22,8 +22,6 @@ const App = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
-   
-      <Contact data={landingPageData.Contact} />
     </div>
   );
 };

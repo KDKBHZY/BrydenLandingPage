@@ -1414,7 +1414,7 @@ a.bg-danger:focus {
 }
 ul,
 ol {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 ul ul,
@@ -1599,7 +1599,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1300px;
   }
 }
 .container-fluid {
@@ -4165,7 +4165,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 100px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
