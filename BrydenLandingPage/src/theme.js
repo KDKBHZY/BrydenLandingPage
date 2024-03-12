@@ -88,16 +88,5 @@ export const themeJson = {
     "isPanelless": true,
     "themeName": "default",
     "colorPalette": "light",
-    "header": {
-      "height": 120,
-      "textAreaWidth": 280,
-      "inheritWidthFrom": "survey",
-      "logoPositionX": "left",
-      "logoPositionY": "middle",
-      "titlePositionX": "right",
-      "titlePositionY": "middle",
-      "descriptionPositionX": "right",
-      "descriptionPositionY": "middle"
-    },
-    "headerView": "advanced"
+ 
   }
