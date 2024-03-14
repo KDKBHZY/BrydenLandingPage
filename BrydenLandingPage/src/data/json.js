@@ -20,7 +20,7 @@ export const json = {
                             "text": "CAR"
                         },
                         {
-                            "value": "truck",
+                            "value": "TRUCK",
                             "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130210/Truck%402x.png",
                             "text": "TRUCK"
                         },
@@ -142,7 +142,7 @@ export const json = {
                   },
                   {
                     "type": "tagbox",
-                    "name": "Exterior color",
+                    "name": "Exteriorcolor",
                     "title": "Choose the exterior color you want",
                     "visibleIf": "{detail} = 'Yes'",
                     "isRequired": false,
@@ -151,7 +151,7 @@ export const json = {
                   },
                   {
                     "type": "tagbox",
-                    "name": "Interior color",
+                    "name": "Interiorcolor",
                     "title": "Choose the interior color you want",
                     "visibleIf": "{detail} = 'Yes'",
                     "isRequired": false,
@@ -187,7 +187,14 @@ export const json = {
                     "minWidth": "256px",
                     "placeholder": "First name"
                 },
-
+                {
+                    "type": "text",
+                    "name": "email",
+                    "width": "64%",
+                    "minWidth": "192px",
+                    "descriptionLocation": "underInput",
+                    "placeholder": "Email"
+                },
                 {
                     "type": "text",
                     "name": "phone",
