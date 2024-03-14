@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BrydenLandingPage/static/css/main.17a5f284.css",
+    "main.js": "/BrydenLandingPage/static/js/main.0aca74cb.js",
+    "index.html": "/BrydenLandingPage/index.html",
+    "main.17a5f284.css.map": "/BrydenLandingPage/static/css/main.17a5f284.css.map",
+    "main.0aca74cb.js.map": "/BrydenLandingPage/static/js/main.0aca74cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17a5f284.css",
+    "static/js/main.0aca74cb.js"
+  ]
+}
