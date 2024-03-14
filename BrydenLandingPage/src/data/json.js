@@ -7,7 +7,7 @@ export const json = {
             "elements": [
                 {
                     "type": "imagepicker",
-                    "name": "animals",
+                    "name": "vehicleType",
                     "title": "Select the vehicle type you want to know",
                     "description": "Please select all that apply.",
                     "imageHeight": 250,
@@ -22,7 +22,7 @@ export const json = {
                         {
                             "value": "truck",
                             "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130210/Truck%402x.png",
-                            "text": "truck"
+                            "text": "TRUCK"
                         },
                         {
                             "value": "SUV",

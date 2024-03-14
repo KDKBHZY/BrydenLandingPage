@@ -1,4 +1,4 @@
-import React from "react";
+import React  ,{ useRef }from "react";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.min.css";
@@ -6,6 +6,7 @@ import "../index.css";
 import { themeJson } from "../theme.js";
 import { json } from "../data/json.js";
 import { ReactElementFactory } from "survey-react-ui";
+import emailjs from '@emailjs/browser';
 
 class ItemTemplateComponent extends React.Component  {
     getImageUrl(brand) {
@@ -37,7 +38,20 @@ export const Header = (props) => {
   survey.applyTheme(themeJson);
 
   survey.onComplete.add((sender, options) => {
-      console.log(JSON.stringify(sender.data, null, 3));
+      console.log(sender.data);
+      
+       emailjs
+      .send('service_a4daqto', 'template_cfiywuw', sender.data, {
+        publicKey: 'fmYRtusEdfoNcufUL',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
   });
   return (<Survey model={survey} />);
 };
