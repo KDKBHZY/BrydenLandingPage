@@ -1,6 +1,5 @@
 {
   "name": "landingpage-react-template",
-  "homepage": "https://kdkbhzy.github.io/BrydenLandingPage/",
   "private": true,
   "browser": {
     "fs": false,

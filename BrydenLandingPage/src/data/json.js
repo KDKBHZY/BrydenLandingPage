@@ -1,6 +1,6 @@
 export const json = {
-
-    "completedHtml": "<div style=\"max-width:688px;text-align:center;margin: 16px auto;\">\n\n<div style=\"padding:0 24px;\">\n<h4>Thank you for choosing us.</h4>\n<br>\n<p>Dear {firstname-for-complete-page}, we're thrilled to have you on board and excited to be a part of your upcoming journey. Your reservation is confirmed, and we can't wait to make your travel experience exceptional.</p>\n</div>\n\n</div>\n",
+    
+    "completedHtml": "<div style=\"max-width:688px;text-align:center;margin: 16px auto;\">\n\n<div style=\"padding:0 24px;\">\n<h4>Thank you for choosing us.</h4>\n<br>\n<p>Dear {firstname-for-complete-page}, Our sales team will contact you soon.</p>\n</div>\n\n</div>\n",
     "pages": [
         {
             "name": "page1",
@@ -10,8 +10,8 @@ export const json = {
                     "name": "vehicleType",
                     "title": "Select the vehicle type you want to know",
                     "description": "Please select all that apply.",
-                    "imageHeight": 250,
-                    "imageWidth": 400,
+                    "imageHeight": 200,
+                    "imageWidth": 300,
                     "isRequired": true,
                     "choices": [
                         {
@@ -200,7 +200,6 @@ export const json = {
                     "name": "phone",
                     "width": "64%",
                     "minWidth": "192px",
-                    "description": "Example: +1 (555) 777-55-22",
                     "descriptionLocation": "underInput",
                     "placeholder": "Phone"
                 }

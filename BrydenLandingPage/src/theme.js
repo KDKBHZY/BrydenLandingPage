@@ -87,6 +87,5 @@ export const themeJson = {
     },
     "isPanelless": true,
     "themeName": "default",
-    "colorPalette": "light",
  
   }
