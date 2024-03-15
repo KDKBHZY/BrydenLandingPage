@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/BrydenLandingPage/static/css/main.17a5f284.css",
-    "main.js": "/BrydenLandingPage/static/js/main.ce255073.js",
+    "main.js": "/BrydenLandingPage/static/js/main.95fda71a.js",
     "index.html": "/BrydenLandingPage/index.html",
     "main.17a5f284.css.map": "/BrydenLandingPage/static/css/main.17a5f284.css.map",
-    "main.ce255073.js.map": "/BrydenLandingPage/static/js/main.ce255073.js.map"
+    "main.95fda71a.js.map": "/BrydenLandingPage/static/js/main.95fda71a.js.map"
   },
   "entrypoints": [
     "static/css/main.17a5f284.css",
-    "static/js/main.ce255073.js"
+    "static/js/main.95fda71a.js"
   ]
 }
