@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f864db1.css",
-    "main.js": "/static/js/main.b31832c9.js",
-    "index.html": "/index.html",
-    "main.2f864db1.css.map": "/static/css/main.2f864db1.css.map",
-    "main.b31832c9.js.map": "/static/js/main.b31832c9.js.map"
+    "main.css": "/BrydenLandingPage/static/css/main.2f864db1.css",
+    "main.js": "/BrydenLandingPage/static/js/main.b31832c9.js",
+    "index.html": "/BrydenLandingPage/index.html",
+    "main.2f864db1.css.map": "/BrydenLandingPage/static/css/main.2f864db1.css.map",
+    "main.b31832c9.js.map": "/BrydenLandingPage/static/js/main.b31832c9.js.map"
   },
   "entrypoints": [
     "static/css/main.2f864db1.css",
