@@ -1,5 +1,7 @@
 export const json = {
-    
+    "goNextPageAutomatic": true,
+    "showProgressBar": "auto",
+    "progressBarType": "pages",
     "completedHtml": "<div style=\"max-width:688px;text-align:center;margin: 16px auto;\">\n\n<div style=\"padding:0 24px;\">\n<h4>Thank you for choosing us.</h4>\n<br>\n<p>Dear {firstname-for-complete-page}, Our sales team will contact you soon.</p>\n</div>\n\n</div>\n",
     "pages": [
         {
@@ -11,13 +13,13 @@ export const json = {
                     "title": "Select the vehicle type you want to know",
                     "description": "Please select all that apply.",
                     "imageHeight": 200,
-                    "imageWidth": 300,
+                    "imageWidth": 360,
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "CAR",
+                            "value": "Car",
                             "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130207/Car%402x.png",
-                            "text": "CAR"
+                            "text": "Car"
                         },
                         {
                             "value": "TRUCK",
@@ -147,7 +149,11 @@ export const json = {
                     "visibleIf": "{detail} = 'Yes'",
                     "isRequired": false,
                     "description": "Please select all that apply.",
-                    "choices": [ "WHITE", "BLACK", "RED", "BLUE", "Gray" ]
+                    "choices": [ "White", "Black", "Red","Beige", "Blue", "Grey","Silver",
+                    "Bronze","Brown","Burgundy","Charcoal","Cream","Dark Blue",
+                    "Dark Green","Dark Grey","Gold","Green","Light Green","Light Blue",
+                "Maroon","Orange","Purple","Red",
+            "Tan","Yellow" ]
                   },
                   {
                     "type": "tagbox",
@@ -156,7 +162,11 @@ export const json = {
                     "visibleIf": "{detail} = 'Yes'",
                     "isRequired": false,
                     "description": "Please select all that apply.",
-                    "choices": [ "WHITE", "BLACK", "RED", "BLUE", "Gray" ]
+                    "choices": [ "White", "Black", "Red","Beige", "Blue", "Grey","Silver",
+                    "Bronze","Brown","Burgundy","Charcoal","Cream","Dark Blue",
+                    "Dark Green","Dark Grey","Gold","Green","Light Green","Light Blue",
+                "Maroon","Orange","Purple","Red",
+            "Tan","Yellow" ]
                   },
                   {
                     "type": "tagbox",
@@ -165,7 +175,7 @@ export const json = {
                     "visibleIf": "{detail} = 'Yes'",
                     "isRequired": false,
                     "description": "Please select all that apply.",
-                    "choices": [ "Carpay", "Air Suspension", "Branded Audio", "Panaromic Sunroof"]
+                    "choices": [ "Heated seats","Carpay", "Air Suspension", "Branded speakers", "Panaromic Sunroof"]
                   },
             ]
         },
