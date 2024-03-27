@@ -1,232 +1,220 @@
 export const json = {
-    "goNextPageAutomatic": true,
-    "showProgressBar": "auto",
-    "progressBarType": "pages",
-    "completedHtml": "<div style=\"max-width:688px;text-align:center;margin: 16px auto;\">\n\n<div style=\"padding:0 24px;\">\n<h4>Thank you for choosing us.</h4>\n<br>\n<p>Dear {firstname-for-complete-page}, Our sales team will contact you soon.</p>\n</div>\n\n</div>\n",
+    "title": "Bryden 60 Second Application",
+    "description": "Get 'Ryden With Bryden' Today!",
+    "logoPosition": "right",
+    "completedHtml": "<h3>Bryden Quick App Complete!!</h3>\n<center><p>You're application has been received and is being processed. A Bryden Financing representative will be reaching out to you shortly. If you haven't heard back from us please call the office at (902) 865-4495.</p></center>",
+    "loadingHtml": "<h3>60 Second Application Loading</h3>",
     "pages": [
-        {
-            "name": "page1",
-            "elements": [
-                {
-                    "type": "imagepicker",
-                    "name": "vehicleType",
-                    "title": "Select the vehicle type you want to know",
-                    "description": "Please select all that apply.",
-                    "imageHeight": 200,
-                    "imageWidth": 360,
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "Car",
-                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130207/Car%402x.png",
-                            "text": "Car"
-                        },
-                        {
-                            "value": "TRUCK",
-                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130210/Truck%402x.png",
-                            "text": "TRUCK"
-                        },
-                        {
-                            "value": "SUV",
-                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130209/Suv%402x.png",
-                            "text": "SUV"
-                        },
-                        {
-                            "value": "VAN",
-                            "imageLink": "https://ddztmb1ahc6o7.cloudfront.net/brydenfinancing/wp-content/uploads/2022/08/15130212/Van%402x.png",
-                            "text": "VAN"
-                        }
-                    ],
-                    "showLabel": true,
-                    "multiSelect": true
-                }
-            ]
-        },
-        {
-            "name": "page2",
-            "elements": [
-                {
-                    "type": "panel",
-                    "name": "makeAndModel",
-                    "title": "Choose make and model you are interested",
-                    "elements": [{
-                        "type": "dropdown",
-                        "name": "carmake",
-                        "title": "Select a Make",
-                        "itemComponent": "new-item",
-                        "isRequired": true,
-                        "choices": [
-                            "Abarth",
-                            "Alfa Romeo",
-                            "Aston Martin",
-                            "Audi",
-                            "Bentley",
-                            "BMW",
-                            "Bugatti",
-                            "Cadillac",
-                            "Chevrolet",
-                            "Chrysler",
-                            "Citroën",
-                            "Dacia",
-                            "Daewoo",
-                            "Daihatsu",
-                            "Dodge",
-                            "Donkervoort",
-                            "DS",
-                            "Ferrari",
-                            "Fiat",
-                            "Fisker",
-                            "Ford",
-                            "Honda",
-                            "Hummer",
-                            "Hyundai",
-                            "Infiniti",
-                            "Iveco",
-                            "Jaguar",
-                            "Jeep",
-                            "Kia",
-                            "KTM",
-                            "Lada",
-                            "Lamborghini",
-                            "Lancia",
-                            "Land Rover",
-                            "Landwind",
-                            "Lexus",
-                            "Lotus",
-                            "Maserati",
-                            "Maybach",
-                            "Mazda",
-                            "McLaren",
-                            "Mercedes-Benz",
-                            "MG",
-                            "Mini",
-                            "Mitsubishi",
-                            "Morgan",
-                            "Nissan",
-                            "Opel",
-                            "Peugeot",
-                            "Porsche",
-                            "Renault",
-                            "Rolls-Royce",
-                            "Rover",
-                            "Saab",
-                            "Seat",
-                            "Skoda",
-                            "Smart",
-                            "SsangYong",
-                            "Subaru",
-                            "Suzuki",
-                            "Tesla",
-                            "Toyota",
-                            "Volkswagen",
-                            "Volvo"
-                        ],
-                        "searchEnabled": false
-                    }, {
-                        "type": "dropdown",
-                        "name": "carmodel",
-                        "title": "Select a Model",
-                        "isRequired": true,
-                        "choicesByUrl": {
-                            "url": "https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/{carmake}?format=json",
-                            "valueName": "Model_Name",
-                            "path": "Results"
-                        }
-                    }]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "detail",
-                    "title": "Need us to help you find a specific car.",
-                    "isRequired": true,
-                    "choices": [ "Yes", "No" ],
-                    "colCount": 0
-                  },
-                  {
-                    "type": "tagbox",
-                    "name": "Exteriorcolor",
-                    "title": "Choose the exterior color you want",
-                    "visibleIf": "{detail} = 'Yes'",
-                    "isRequired": false,
-                    "description": "Please select all that apply.",
-                    "choices": [ "White", "Black", "Red","Beige", "Blue", "Grey","Silver",
-                    "Bronze","Brown","Burgundy","Charcoal","Cream","Dark Blue",
-                    "Dark Green","Dark Grey","Gold","Green","Light Green","Light Blue",
-                "Maroon","Orange","Purple","Red",
-            "Tan","Yellow" ]
-                  },
-                  {
-                    "type": "tagbox",
-                    "name": "Interiorcolor",
-                    "title": "Choose the interior color you want",
-                    "visibleIf": "{detail} = 'Yes'",
-                    "isRequired": false,
-                    "description": "Please select all that apply.",
-                    "choices": [ "White", "Black", "Red","Beige", "Blue", "Grey","Silver",
-                    "Bronze","Brown","Burgundy","Charcoal","Cream","Dark Blue",
-                    "Dark Green","Dark Grey","Gold","Green","Light Green","Light Blue",
-                "Maroon","Orange","Purple","Red",
-            "Tan","Yellow" ]
-                  },
-                  {
-                    "type": "tagbox",
-                    "name": "options",
-                    "title": "Choose the specific options you want",
-                    "visibleIf": "{detail} = 'Yes'",
-                    "isRequired": false,
-                    "description": "Please select all that apply.",
-                    "choices": [ "Heated seats","Carpay", "Air Suspension", "Branded speakers", "Panaromic Sunroof"]
-                  },
-            ]
-        },
-        {
-            "name": "page3",
-            "elements": [
-                {
-                    "type": "text",
-                    "name": "last-name",
-                    "width": "64%",
-                    "minWidth": "192px",
-                    "descriptionLocation": "underInput",
-                    "placeholder": "Last name"
-                },
-                {
-                    "type": "text",
-                    "name": "first-name",
-                    "width": "36%",
-                    "minWidth": "256px",
-                    "placeholder": "First name"
-                },
-                {
-                    "type": "text",
-                    "name": "email",
-                    "width": "64%",
-                    "minWidth": "192px",
-                    "descriptionLocation": "underInput",
-                    "placeholder": "Email"
-                },
-                {
-                    "type": "text",
-                    "name": "phone",
-                    "width": "64%",
-                    "minWidth": "192px",
-                    "descriptionLocation": "underInput",
-                    "placeholder": "Phone"
-                }
-            ]
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "image",
+        "name": "question7",
+        "hideNumber": true,
+        "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=0451e178-294e-49c6-b99a-07a1e4679f98",
+        "imageHeight": "auto",
+        "imageWidth": ""
+       },
+       {
+        "type": "imagepicker",
+        "name": "question1",
+        "title": "Start by selecting a vehicle type...",
+        "hideNumber": true,
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "Car",
+          "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=d290d1b7-7bdb-406b-a29e-7a78bae67e51"
+         },
+         {
+          "value": "Truck",
+          "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=ca011318-895c-4f18-b61a-008626285d7b"
+         },
+         {
+          "value": "SUV",
+          "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=dee05621-3d3c-45df-8704-d07b20443f07"
+         },
+         {
+          "value": "Van",
+          "text": "VAN",
+          "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=d45c4c2b-72ad-4a9b-aca6-4eacf547c5c6"
+         }
+        ],
+        "showLabel": true
+       }
+      ],
+      "title": "Bryden's 60 Second Quick App."
+     },
+     {
+      "name": "page2",
+      "elements": [
+       {
+        "type": "dropdown",
+        "name": "question2",
+        "title": "How much can you spend per month.",
+        "hideNumber": true,
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "$250",
+          "text": "Under $250/mo"
+         },
+         {
+          "value": "$251-375",
+          "text": "$251-$375/mo"
+         },
+         {
+          "value": "$376-500",
+          "text": "$376-$500/mo"
+         },
+         "$501-$1500",
+         "$1501+"
+        ]
+       },
+       {
+        "type": "boolean",
+        "name": "question3",
+        "title": "Are you a Canadian Citizen",
+        "hideNumber": true
+       },
+       {
+        "type": "text",
+        "name": "question4",
+        "title": "Date of Birth",
+        "hideNumber": true,
+        "inputType": "date"
+       }
+      ],
+      "title": "Select your budget",
+      "description": "Pick a monthly budget for the vehicle your choosing."
+     },
+     {
+      "name": "page3",
+      "elements": [
+       {
+        "colCount":1,
+        "type": "radiogroup",
+        "name": "question5",
+        "title": "Current employment Status:",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "Item 1",
+          "text": "Employed"
+         },
+         {
+          "value": "Item 2",
+          "text": "Student"
+         },
+         {
+          "value": "Item 3",
+          "text": "Homemaker"
+         },
+         {
+          "value": "Item 4",
+          "text": "Self-Employed"
+         },
+         {
+          "value": "Item 5",
+          "text": "Retired"
+         }
+        ]
+       },
+       {
+        "type": "multipletext",
+        "name": "question6",
+        "title": "Where do you work...",
+        "hideNumber": true,
+        "items": [
+         {
+          "name": "text1",
+          "title": "Company"
+         },
+         {
+          "name": "text2",
+          "title": "Job Title"
+         }
+        ]
+       },
+       {
+        "colCount":1,
+        "type": "radiogroup",
+        "name": "question10",
+        "title": "Years at Job",
+        "hideNumber": true,
+        "choices": [
+         {
+          "value": "<3month",
+          "text": "Less Than 3 Months"
+         },
+         {
+          "value": "3-11 months",
+          "text": "Between 3-11 Months"
+         },
+         "1-2 Years",
+         "3-5 Years",
+         "6-10 Years"
+        
+        ]
+       },
+       {
+        "type": "text",
+        "name": "question8",
+        "title": "Monthly Income",
+        "description": "Input  an amount in dollars.",
+        "hideNumber": true,
+        "maskType": "currency",
+        "maskSettings": {
+         "prefix": "$"
         }
+       }
+      ],
+      "title": "Employment Status",
+      "description": "Tell us about your current employment status..."
+     },
+     {
+      "name": "page4",
+      "elements": [
+       {
+        "type": "multipletext",
+        "name": "question9",
+        "title": "Contact Information",
+        "hideNumber": true,
+        "isRequired": true,
+        "items": [
+         {
+          "name": "First Name",
+          "placeholder": "John",
+          "title": "First Name"
+         },
+         {
+          "name": "Last Name",
+          "placeholder": "Doe",
+          "title": "Last Name"
+         },
+         {
+          "name": "Phone",
+          "placeholder": "(XXX) XXX-XXXX",
+          "inputType": "tel",
+          "title": "Phone Number"
+         },
+         {
+          "name": "Email",
+          "placeholder": "email@domain.com",
+          "inputType": "email",
+          "title": "Email",
+          "requiredErrorText": "You forgot a required field..."
+         }
+        ]
+       }
+      ],
+      "title": "Your Almost Done!",
+      "description": "Tell us about yourself!"
+     }
     ],
-    "calculatedValues": [{
-        "name": "firstname-for-complete-page",
-        "expression": "iif({first-name} notempty, {first-name}, guests)"
-    }],
-    "showPrevButton": true,
-    "showQuestionNumbers": "off",
-    "questionErrorLocation": "bottom",
-    "pagePrevText": "Prev",
-    "pageNextText": "Next ➝",
-    "completeText": "Submit",
-    "widthMode": "static",
-    "width": "904",
-    "fitToContainer": true
-};
+    "showTitle": false,
+    "showProgressBar": "aboveheader",
+    "allowCompleteSurveyAutomatic": false,
+    "completeText": "Submit"
+   }

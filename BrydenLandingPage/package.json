@@ -1,6 +1,6 @@
 {
   "name": "landingpage-react-template",
-  "homepage":"https://kdkbhzy.github.io/BrydenLandingPage/",
+  "homepage":"https://carfinder.brydenfinancing.com/",
   "private": true,
   "browser": {
     "fs": false,

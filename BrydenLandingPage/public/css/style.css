@@ -727,3 +727,22 @@ label {
    display: none;
   }
 }
+
+
+.sd-question__content{
+  display: inline-block !important;
+  text-align: left !important;
+}
+/* .sd-element--with-frame{
+  display: inline-block !important;
+  text-align: left !important;
+} */
+
+#sq_153.sd-row__question{
+  display: inline-block !important;
+  text-align: left !important;
+}
+#sq_157.sd-row__question{
+  display: inline-block !important;
+  text-align: left !important;
+}
