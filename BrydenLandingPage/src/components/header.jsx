@@ -153,6 +153,7 @@ export const Header = (props) => {
       .then(
         () => {
           console.log('SUCCESS!');
+          console.log(sender.data);
         },
         (error) => {
           console.log('FAILED...', error);

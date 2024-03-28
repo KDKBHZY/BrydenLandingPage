@@ -2,20 +2,13 @@ export const json = {
     "title": "Bryden 60 Second Application",
     "description": "Get 'Ryden With Bryden' Today!",
     "logoPosition": "right",
-    "completedHtml": "<h3>Bryden Quick App Complete!!</h3>\n<center><p>You're application has been received and is being processed. A Bryden Financing representative will be reaching out to you shortly. If you haven't heard back from us please call the office at (902) 865-4495.</p></center>",
+    "completedHtml": "<h3>Bryden Quick App Complete!!</h3>\n<center><img src=\"https://api.surveyjs.io/private/Surveys/files?name=0451e178-294e-49c6-b99a-07a1e4679f98\"  width=\"500\" height=\"600\">  <p>You're application has been received and is being processed. A Bryden Financing representative will be reaching out to you shortly. If you haven't heard back from us please call the office at (902) 865-4495.</p></center>",
     "loadingHtml": "<h3>60 Second Application Loading</h3>",
     "pages": [
      {
       "name": "page1",
       "elements": [
-       {
-        "type": "image",
-        "name": "question7",
-        "hideNumber": true,
-        "imageLink": "https://api.surveyjs.io/private/Surveys/files?name=0451e178-294e-49c6-b99a-07a1e4679f98",
-        "imageHeight": "auto",
-        "imageWidth": ""
-       },
+       
        {
         "type": "imagepicker",
         "name": "question1",
@@ -83,7 +76,8 @@ export const json = {
         "name": "question4",
         "title": "Date of Birth",
         "hideNumber": true,
-        "inputType": "date"
+        "inputType": "date",
+        "placeholder":"Click to Select date"
        }
       ],
       "title": "Select your budget",
@@ -100,23 +94,23 @@ export const json = {
         "isRequired": true,
         "choices": [
          {
-          "value": "Item 1",
+          "value": "Employed",
           "text": "Employed"
          },
          {
-          "value": "Item 2",
+          "value": "Student",
           "text": "Student"
          },
          {
-          "value": "Item 3",
+          "value": "Homemaker",
           "text": "Homemaker"
          },
          {
-          "value": "Item 4",
+          "value": "Self-Employed",
           "text": "Self-Employed"
          },
          {
-          "value": "Item 5",
+          "value": "Retired",
           "text": "Retired"
          }
         ]
@@ -128,11 +122,11 @@ export const json = {
         "hideNumber": true,
         "items": [
          {
-          "name": "text1",
+          "name": "Company",
           "title": "Company"
          },
          {
-          "name": "text2",
+          "name": "Job Title",
           "title": "Job Title"
          }
         ]
@@ -152,9 +146,18 @@ export const json = {
           "value": "3-11 months",
           "text": "Between 3-11 Months"
          },
-         "1-2 Years",
-         "3-5 Years",
-         "6-10 Years"
+         {
+            "value": "1-2 Years",
+            "text": "1-2 Years"
+           },
+           {
+            "value": "3-5 Years",
+            "text": "3-5 Years"
+           },
+           {
+            "value": "6-10 Years",
+            "text": "6-10 Years"
+           },
         
         ]
        },
